@@ -1,8 +1,11 @@
 {
   "name": "todo-rr",
   "version": "0.1.0",
+  "homepage": "https://dinrol.github.io/mindbox",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -36,7 +39,8 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-styled-components-a11y": "^2.1.31",
-    "eslint-plugin-testing-library": "^6.0.1"
+    "eslint-plugin-testing-library": "^6.0.1",
+    "gh-pages": "^6.0.0"
   },
   "eslintConfig": {
     "extends": [
